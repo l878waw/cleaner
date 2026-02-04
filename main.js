@@ -1,6 +1,4 @@
-const electron = require('electron');
-console.log('Electron import:', electron);
-const { app, BrowserWindow, ipcMain } = electron;
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const { exec } = require('child_process');
 const fs = require('fs');
