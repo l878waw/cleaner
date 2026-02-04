@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Cleaner</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body class="app-container">
+
+    <!-- Title Bar -->
+    <div class="title-bar glass">
+        <span class="title-text">Mac Cleaner Pro</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Status Indicator -->
+        <div id="status-container" class="status-circle-container">
+            <div class="glow-effect"></div>
+            <div class="status-circle glass">
+                <div class="status-inner">
+                    <span id="scan-status-text" class="status-text">Ready</span>
+                    <p id="system-health" class="sub-text">System Data Monitor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Area -->
+        <div class="action-area">
+            <button id="scan-btn" class="scan-button glass no-drag">
+                <div class="btn-content">
+                    <div class="icon-circle">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="btn-title">Scan System</h3>
+                        <p class="btn-subtitle">Analyze caches & logs</p>
+                    </div>
+                </div>
+                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Results List (Hidden Initially) -->
+        <div id="results-area" class="results-container glass hidden custom-scrollbar">
+            <!-- Items injected by JS -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>v1.2.0 • Intelligent Clean</span>
+        <span id="total-scanned">0 KB Scanned</span>
+    </footer>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>

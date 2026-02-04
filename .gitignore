@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build Output
+dist/
+output.css
+
+# System Files
+.DS_Store
+
+# User Backups
+old_xcode_backup/
